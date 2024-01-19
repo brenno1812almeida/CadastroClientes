@@ -1,0 +1,28 @@
+<form >
+  <div class="cadastro-container">
+    <div class="campos">
+      <h2>Cadastro de Usuário</h2>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username" class="campo" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" class="campo" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" [(ngModel)]="telefone" placeholder="Formato: (21) 9 8123-4567" class="campo" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" [(ngModel)]="senha" class="campo" required>
+
+      <button type="submit" (click)="onSubmitCadastro()">Cadastrar Usuário</button>
+    </div>
+
+    <div class="upload-container">
+      <label for="imagem" class="upload-label">Upload de Imagem</label>
+      <input type="file" id="imagem" name="imagem" accept="image/*" class="upload-input" (change)="onFileSelected($event)">
+      <img *ngIf="imagePreview" [src]="imagePreview" alt="Imagem Carregada" class="image-preview">
+      <img *ngIf="foto" [src]="foto" alt="Imagem Carregada" class="foto">
+    </div>
+  </div>
+</form>

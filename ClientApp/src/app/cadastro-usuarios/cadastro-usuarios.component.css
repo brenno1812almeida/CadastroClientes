@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #9d9d9d;
+}
+
+form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-weight: 500;
+  letter-spacing: .7px;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 2px;
+  font-weight: 500;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #cbcbcb;
+}
+
+.cadastro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #00000096;
+  padding: 20px;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo {
+  width: 100%;
+  height: 25px;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.upload-container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  margin-left: 20px;
+  min-width: 200px;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upload-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  max-width: 200px;
+  height: 100%;
+}
+
+.upload-label {
+  display: block;
+  text-align: center;
+}
+
+.foto {
+  max-width: 180px;
+  max-height: 270px;
+  padding-top: 10px;
+}
+
+.image-preview {
+  display: none;
+}
+
+
